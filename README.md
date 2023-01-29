@@ -1,27 +1,22 @@
-# MomentsProject
+# moments-project-hora-de-codar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+Projeto feito no curso de Angular do canal do Youtube 'Hora de Codar'
 
-## Development server
+## API
+É necessário clonar o repo da API e rodar na própria máquina.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Link do repositório da API](https://github.com/matheusbattisti/curso_adonis_api_yt)
 
-## Code scaffolding
+- [Link do vídeo de como criar a API com AdonisJS](https://www.youtube.com/watch?v=y8XfJJYhXPE&t=0s)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Como rodar a API
+1. Rodar o comando:
+   $ npm install
+2. Criar um arquivo .env
+3. Gerar uma key:
+   $ node ace generate:key
+4. Colocar a key gerada na variável de ambiente APP_KEY no arquivo .env
+5. Rodar o comando abaixo para criar as tabelas:
+   $ node ace migration:run
+6. rodar a API com o comando:
+   $ node ace serve
